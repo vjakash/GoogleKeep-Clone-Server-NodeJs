@@ -45,9 +45,13 @@ let register = require('./routes/register.js');
 let forgotpassword = require('./routes/forgotpassword.js');
 let resetpassword = require('./routes/resetpassword.js');
 let addNotes = require('./routes/addNotes.js');
+let addChecklist = require('./routes/addChecklist.js');
 let getNotes = require('./routes/getNotes.js');
+let getChecklist = require('./routes/getChecklist.js');
 let updateNote = require('./routes/updateNote.js');
+let updateChecklist = require('./routes/updateChecklist.js');
 let deleteNote = require('./routes/deleteNote.js');
+let deleteChecklist = require('./routes/deleteChecklist.js');
 
 //routes
 app.use('/login', login);
@@ -55,6 +59,10 @@ app.use('/register', register);
 app.use('/forgotpassword', forgotpassword);
 app.use('/resetpassword', resetpassword);
 app.use('/addNotes', addNotes);
+app.use('/addChecklist', addChecklist);
 app.use('/getNotes', getNotes);
+app.use('/getChecklist', getChecklist);
 app.use('/updateNote', updateNote);
+app.use('/updateChecklist', updateChecklist);
 app.use('/deleteNote', deleteNote);
+app.use('/deleteChecklist', deleteChecklist);
